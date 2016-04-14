@@ -30,18 +30,18 @@ app.get('/guests', function(req, res){
 });
 app.get("/guests/:name", function(req, res){
   Guest.findOne({name: req.params.name}).then(function(guest){
-    res.render("guests-show",{
+    res.render("guests-show", {
       guest: guest
     });
   });
 });
 app.post("/guests", function(req, res){
- Guest.create(req/bpdy.guest).then(function(guest){
+ Guest.create(req.body.guest).then(function(guest){
    res.redirect("/guests/" + guest.name);
  });
 });
 app.post("/guests/:name", function(req, res){
-  Guest.findOneAndUpdate({name: req.params.name}, req.body.guest, {
+  Guest.findOneAndUpdate({name: req.params.name}, req.body.guest, {new:true}).then(function(guest){
     res.redirect("/guests/" + guest.name);
   });
 });
