@@ -4,6 +4,7 @@ var db      = require("./db/connection.js");
 
 var app     = express();
 
+app.set("port", process.env.PORT || 3001);
 app.set("view engine", "hbs");
 app.engine(".hbs", hbs({
   extname:       ".hbs",
@@ -33,6 +34,6 @@ app.get("/guests/:name", function(req, res){
   });
 });
 
-app.listen(3001, function(){
-  console.log("It's party time!")
-})
+app.listen(app.get("port"), function(){
+  console.log("It's party time!");
+});
