@@ -10,8 +10,4 @@ var GuestSchema = new mongoose.Schema(
 mongoose.model("Guest", GuestSchema);
 mongoose.connect("mongodb://localhost/guestlist");
 
-// var seedData = require("./seeds.json");
-// module.exports = {
-//   guests: seedData
-// }
 module.exports = mongoose;
