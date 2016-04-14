@@ -1,1 +1,5 @@
+{{#if guest}}
 <h2>{{guest.name}} is coming to the wedding! His/Her is related to the couple as a {{guest.relation}}!</h2>
+{{else}}
+<h2>That guest is not coming to the wedding!</h2>
+{{/if}}
