@@ -35,8 +35,15 @@ app.get("/guests/:name", function(req, res){
     });
   });
 });
-app.post("/guests", function(){
-  res.json(req.body);
+app.post("/guests", function(req, res){
+ Guest.create(req/bpdy.guest).then(function(guest){
+   res.redirect("/guests/" + guest.name);
+ });
+});
+app.post("/guests/:name", function(req, res){
+  Guest.findOneAndUpdate({name: req.params.name}, req.body.guest, {
+    res.redirect("/guests/" + guest.name);
+  });
 });
 
 app.listen(app.get("port"), function(){
