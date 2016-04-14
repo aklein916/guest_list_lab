@@ -1,8 +1,9 @@
 var express = require("express");
 var hbs     = require("express-handlebars");
-var db      = require("./db/connection.js");
-
+var mongoose= require("./db/connection");
 var app     = express();
+
+var Guest = mongoose.model("Guest");
 
 app.set("port", process.env.PORT || 3001);
 app.set("view engine", "hbs");
@@ -18,8 +19,10 @@ app.get("/", function(req, res){
   res.render("app-welcome");
 });
 app.get('/guests', function(req, res){
-  res.render("guests-index", {
-    guests: db.guests
+  Candidate.find({}).then(function(guests){
+    res.render("guests-index",{
+      guests: guests
+    });
   });
 });
 app.get("/guests/:name", function(req, res){

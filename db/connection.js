@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 
 var GuestSchema = new mongoose.Schema(
   {
-    name: String
+    name: String,
     relation: String
   }
 );
