@@ -1,1 +1,5 @@
 <h2>We have {{guests.length}} coming to the wedding!</h2>
+{{#each guests as |guest index|}}
+<h3>
+  <a href="/guests/{{guest.name}}">{{guest.name}} is coming to the wedding!
+{{/each}}

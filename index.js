@@ -21,6 +21,17 @@ app.get('/guests', function(req, res){
     guests: db.guests
   });
 });
+app.get("/guests/:name", function(req, res){
+  var guestName;
+  db.guests.forEach(function(guest){
+    if(givenName === guest.name){
+      guestOutput == guest;
+    }
+  });
+  res.render("guests-show", {
+    guest: guestOutput
+  });
+});
 
 app.listen(3001, function(){
   console.log("It's party time!")
