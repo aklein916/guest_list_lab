@@ -1,4 +1,5 @@
 var express = require("express");
+var parser  = require("body-parser");
 var hbs     = require("express-handlebars");
 var mongoose= require("./db/connection");
 
@@ -15,6 +16,7 @@ app.engine(".hbs", hbs({
   defaultLayout: "layout-main"
 }));
 app.use("/assets", express.static("public"));
+app.use(parser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
   res.render("app-welcome");
@@ -32,6 +34,9 @@ app.get("/guests/:name", function(req, res){
       guest: guest
     });
   });
+});
+app.post("/guests", function(){
+  res.json(req.body);
 });
 
 app.listen(app.get("port"), function(){

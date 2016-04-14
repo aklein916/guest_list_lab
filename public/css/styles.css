@@ -7,8 +7,17 @@ body {
 a {
   text-decoration: none;
   color: white;
+  font-size: 30px;
+  padding: none;
+  margin: 10px;
+  outline: 15px;
 }
 
 a:visited {
   color: white;
+}
+
+h3 {
+  margin: auto;
+  padding: none;
 }

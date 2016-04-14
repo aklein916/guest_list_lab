@@ -1,5 +1,13 @@
 <h2>We have {{guests.length}} guests coming to the wedding!</h2>
+
+<form action="/guests" method="post">
+  <input type="text" name="guest[name]" placeholder="Name" />
+  <input type="text" name="guest[relation]" placeholder="Relation to the Couple" />
+  <button type="submit">Add Guest</button>
+</form>
+
 {{#each guests as |guest index|}}
 <h3>
   <a href="/guests/{{guest.name}}">{{guest.name}} is coming to the wedding!
+</h3>
 {{/each}}
