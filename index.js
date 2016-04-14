@@ -15,6 +15,11 @@ app.use("/assets", express.static("public"));
 app.get("/", function(req, res){
   res.render("app-welcome");
 });
+app.get('/guests', function(req, res){
+  res.render("guests-index", {
+    numGuests: 25
+  });
+});
 
 app.listen(3001, function(){
   console.log("It's party time!")
