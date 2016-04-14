@@ -19,7 +19,7 @@ app.get("/", function(req, res){
   res.render("app-welcome");
 });
 app.get('/guests', function(req, res){
-  Candidate.find({}).then(function(guests){
+  Guest.find({}).then(function(guests){
     res.render("guests-index",{
       guests: guests
     });
