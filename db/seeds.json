@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Alexa",
+    "relation": "sister-of-the-bride"
+  },
+  {
+    "name": "Lynn",
+    "relation": "mother-of-the-bride"
+  },
+  {
+    "name": "James",
+    "relation": "father-of-the-bride"
+  },
+  {
+    "name": "Lauren",
+    "relation": "mother-of-the-groom"
+  },{
+    "name": "Ken",
+    "relation": "father-of-the-groom"
+  },
+  {
+    "name": "Jesse",
+    "relation": "brother-of-the-groom"
+  },{
+    "name": "Aaron",
+    "relation": "brother-of-the-groom"
+  },
+  {
+    "name": "Bethie",
+    "relation": "cousin"
+  },{
+    "name": "Lara",
+    "relation": "cousin"
+  },
+  {
+    "name": "Ashley",
+    "relation": "cousin"
+  },{
+    "name": "Alex",
+    "relation": "cousin"
+  },
+  {
+    "name": "Pat",
+    "relation": "Grammy"
+  },{
+    "name": "Ralph",
+    "relation": "Papa"
+  },
+  {
+    "name": "Gerda",
+    "relation": "Grandma"
+  },{
+    "name": "Alice",
+    "relation": "friend"
+  },
+  {
+    "name": "Pepi",
+    "relation": "Aunt"
+  },{
+    "name": "Gary",
+    "relation": "Uncle"
+  },
+  {
+    "name": "Don",
+    "relation": "Uncle"
+  },{
+    "name": "Debbie",
+    "relation": "Uncle"
+  },
+  {
+    "name": "Jenna",
+    "relation": "friend"
+  },{
+    "name": "Rachel",
+    "relation": "friend"
+  },
+  {
+    "name": "Julie",
+    "relation": "friend"
+  },{
+    "name": "Allie",
+    "relation": "friend"
+  },
+  {
+    "name": "Dina",
+    "relation": "friend"
+  },{
+    "name": "Allison",
+    "relation": "friend"
+  },
+  {
+    "name": "Adam",
+    "relation": "friend"
+  },{
+    "name": "Jessica",
+    "relation": "cousin"
+  },
+  {
+    "name": "Julie",
+    "relation": "cousin"
+  },{
+    "name": "Alysa",
+    "relation": "cousin"
+  },
+  {
+    "name": "Lindsay",
+    "relation": "cousin"
+  },{
+    "name": "Andrew",
+    "relation": "cousin"
+  },
+  {
+    "name": "Katie",
+    "relation": "cousin"
+  },{
+    "name": "Katie",
+    "relation": "cousin"
+  },
+  {
+    "name": "Jen",
+    "relation": "Bride"
+  },{
+    "name": "Sam",
+    "relation": "groom"
+  },
+  {
+    "name": "Tenny",
+    "relation": "dog"
+  },
+
+]
