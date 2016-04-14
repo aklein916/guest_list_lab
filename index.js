@@ -40,6 +40,11 @@ app.post("/guests", function(req, res){
    res.redirect("/guests/" + guest.name);
  });
 });
+app.post("/guests/:name/delete", function(req, res){
+  Guest.findOneAndRemove({name: req.params.name}).then(function(){
+    res.redirect("/guests")
+  });
+});
 app.post("/guests/:name", function(req, res){
   Guest.findOneAndUpdate({name: req.params.name}, req.body.guest, {new:true}).then(function(guest){
     res.redirect("/guests/" + guest.name);

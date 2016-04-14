@@ -3,9 +3,11 @@
 {{else}}
 <h2>That guest is not coming to the wedding!</h2>
 {{/if}}
-
+<form method="post" action="/guests/{{guest.name}}/delete">
+  <button type="submit">Delete Guest</button>
+</form>
 <form action="/guests/{{guest.name}}" method="post">
-  <input type="text" name="guest[name]" placeholder="Name" value="{{guest.name}}" />
+  <input type="text" name="guest[name]" placeholder="Name" value="{{guest.name}}"/>
   <input type="text" name="guest[relation]" placeholder="Relation to the Couple" value="{{guest.relation}}"/>
   <button type="submit">Edit Guest</button>
 </form>
