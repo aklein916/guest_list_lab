@@ -1,6 +1,7 @@
 var express = require("express");
 var hbs     = require("express-handlebars");
 var mongoose= require("./db/connection");
+
 var app     = express();
 
 var Guest = mongoose.model("Guest");
@@ -26,14 +27,10 @@ app.get('/guests', function(req, res){
   });
 });
 app.get("/guests/:name", function(req, res){
-  var guestName;
-  db.guests.forEach(function(guest){
-    if(givenName === guest.name){
-      guestOutput == guest;
-    }
-  });
-  res.render("guests-show", {
-    guest: guestOutput
+  Guest.findOne({name: req.params.name}).then(function(guest){
+    res.render("guests-show",{
+      guest: guest
+    });
   });
 });
 
