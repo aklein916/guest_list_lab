@@ -8,16 +8,34 @@ a {
   text-decoration: none;
   color: white;
   font-size: 30px;
-  padding: none;
+  padding: inherit;;
   margin: 10px;
   outline: 15px;
+  font-weight: normal;
 }
 
 a:visited {
-  color: white;
+  color: grey;
 }
 
-h3 {
+h2, h3 {
   margin: auto;
   padding: none;
+  font-size: 28px;
+  color: grey;
+}
+
+.welcome{
+  font-size: 45px;
+  font-weight: bold;
+  padding:15px;
+}
+button {
+  font-size: 15px;
+}
+.photo {
+  padding-top: 50px;
+  image-orientation: center;
+  border-color: black;
+  border-width: 4px;
 }
